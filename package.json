@@ -1,0 +1,29 @@
+{
+	"name": "stunning-octo-chainsaw",
+	"version": "0.0.0-alpha",
+	"description": "Swimming Webapp",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mailmindlin/stunning-octo-chainsaw.git"
+	},
+	"keywords": [
+		"swimming",
+		"webapp"
+	],
+	"author": "mailmindlin",
+	"license": "UNLICENSED",
+	"private": true,
+	"bugs": {
+		"url": "https://github.com/mailmindlin/stunning-octo-chainsaw/issues"
+	},
+	"homepage": "https://github.com/mailmindlin/stunning-octo-chainsaw",
+	"dependencies": {
+		"express": "^4.14.0",
+		"ws": "^1.1.1",
+		"config": "^1.24.0"
+	}
+}

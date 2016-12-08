@@ -1,0 +1,63 @@
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="/polymer/polymer-element.html">
+<dom-module id="view-timer">
+	<template>
+		<style>
+			.lanes {
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				width: 100%;
+			}
+			.lane {
+				flex-grow: 1;
+				flex-shrink: 1;
+				background-color: red;
+				border-width: 1px;
+				border-style: solid;
+			}
+		</style>
+		<span id="time">[[__timeString(time)]]</span>
+		<ul id="lanes">
+			<template is="dom-repeat" items="{{lanes}}">
+				<li class="lane">
+					<span>{{item.number}}</span>
+				</li>
+			</template>
+		</ul>
+	</template>
+	<script>
+		class TimerView extends Polymer.Element {
+			static get is() {return 'view-timer';}
+			static get config() {
+				return {
+					title: {
+						type: String,
+						notify: true
+					},
+					lanes: {
+						type: Object,
+						notify: true
+					},
+					time: {
+						type: Number
+					}
+				};
+			}
+			constructor() {
+				super();
+			}
+			connectedCallback() {
+				super.connectedCallback();
+			}
+			start() {
+			}
+			reset() {
+			}
+			stop() {
+			}
+		}
+		customElements.define(TimerView.is, TimerView);
+	</script>
+</dom-module>

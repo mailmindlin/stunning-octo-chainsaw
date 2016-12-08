@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Polymer imports -->
+		<link rel="stylesheet" href="styles/main.css"/>
+		<script src="js/api.js"></script>
+		<script src="webcomponentsjs/webcomponents.js"></script>
+		<link rel="import" href="elements/view-timer/view-timer.html"/>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li data-link="dashboard">Dashboard</li>
+				<li data-link="stats">Stats</li>
+				<li data-link="timing">Timing</li>
+			</ul>
+		</div>
+		<div id="overlay"></div>
+		<nav id="navbar">
+			<span id="title">Dashboard</span>
+		</nav>
+		<div id="stage">
+			<view-timer active></view-timer>
+		</div>
+	</body>
+</html>
